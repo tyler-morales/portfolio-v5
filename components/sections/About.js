@@ -14,7 +14,7 @@ export default function About() {
   const [sentence, setSentence] = useState(sentences[0])
   const [iterator, setIterator] = useState(1)
 
-  const randomizeSentence = () => {
+  const loopThroughSentences = () => {
     setSentence(sentences[iterator])
     setIterator((iterator += 1))
     if (iterator == 5) setIterator(0)
@@ -24,7 +24,7 @@ export default function About() {
     <Section>
       <div className="px-4 max-w-[1080px] m-auto">
         <h2 className="text-blue text-4xl font-bold mb-10">About</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-20">
           <figure className="w-full">
             <Image
               layout="responsive"
@@ -39,7 +39,7 @@ export default function About() {
             </figcaption>
           </figure>
           <div>
-            <h4 className="md:mt-10 mb-4 md:mb-20 text-sm md:text-base">
+            <h4 className="lg:mt-10 mb-4 lg:mb-20 text-sm md:text-base">
               An Overview
             </h4>
             <p>
@@ -58,7 +58,7 @@ export default function About() {
               applications at Cognizant for a variety of clients and
               experimenting with new web tools.
             </p>
-            <p onClick={randomizeSentence} className="cursor-pointer">
+            <p onClick={loopThroughSentences} className="cursor-pointer">
               {sentence}
             </p>
             <a
