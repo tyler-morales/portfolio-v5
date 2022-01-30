@@ -14,10 +14,10 @@ export default function Home() {
         />
       </Head>
 
-      <div className="grid gap-12 grid-cols-1">
+      <main className="grid gap-12 grid-cols-1">
         {/* Hero */}
         <Hero />
-      </div>
+      </main>
     </>
   )
 }
