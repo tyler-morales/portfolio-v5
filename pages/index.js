@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Footer from '../components/Footer'
 
 import Hero from '../components/sections/Hero'
 
@@ -18,6 +19,9 @@ export default function Home() {
         {/* Hero */}
         <Hero />
       </main>
+
+      {/* Footer */}
+      <Footer />
     </>
   )
 }
