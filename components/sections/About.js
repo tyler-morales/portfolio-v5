@@ -1,14 +1,31 @@
-import React from 'react'
+import {useState} from 'react'
 import Image from 'next/image'
 import Section from '../Section'
 
+const sentences = [
+  'On the side, I regularly ride bikes, run on trails, and read nightly.',
+  'On the side, I regularly save kittens from trees, parachute off mountains, and brush and floss 3x a day.',
+  'On the side, I regularly drink 1-3 cups of coffee and tea, meditate for 20 minutes, and eat a full serving of fruits and vegetables.',
+  'On the side, I regularly take a cold shower, run ten miles, and get eight hours of sleep.',
+  'On the side, I regularly read to dogs, take long walks on the beach, and frolic in a field of daisies. ',
+]
+
 export default function About() {
+  const [sentence, setSentence] = useState(sentences[0])
+  const [iterator, setIterator] = useState(1)
+
+  const randomizeSentence = () => {
+    setSentence(sentences[iterator])
+    setIterator((iterator += 1))
+    if (iterator == 5) setIterator(0)
+  }
+
   return (
     <Section>
       <div className="px-4 max-w-[1080px] m-auto">
         <h2 className="text-blue text-4xl font-bold mb-10">About</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
-          <figure classNam="w-full">
+          <figure className="w-full">
             <Image
               layout="responsive"
               width={1000}
@@ -41,8 +58,8 @@ export default function About() {
               applications at Cognizant for a variety of clients and
               experimenting with new web tools.
             </p>
-            <p>
-              On the side, I reguraly rides bikes, run on trails, and nightly.
+            <p onClick={randomizeSentence} className="cursor-pointer">
+              {sentence}
             </p>
             <a
               href="/files/resume.pdf"
