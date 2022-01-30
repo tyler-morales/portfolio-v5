@@ -45,7 +45,7 @@ export default function About() {
               On the side, I reguraly rides bikes, run on trails, and nightly.
             </p>
             <a
-              href="../../public/files/resume.pdf"
+              href="/files/resume.pdf"
               target="_blank"
               className="bg-blue text-white md:text-lg rounded-lg px-4 py-2 md:px-8 md:py-4 block w-max mt-4 md:mt-8 ring-offset-currentColor ring-offset-4 focus:outline-none focus:ring-2 focus:ring-blue">
               Resume
