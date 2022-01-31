@@ -1,9 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {Squeeze as Hamburger} from 'hamburger-react'
-import useDeviceSize from '../hooks/useDeviceSize'
 
 export default function Nav() {
-  const [width] = useDeviceSize()
   const [toggleMenu, setToggleMenu] = useState(false)
   const [screenWidth, setScreenWidth] = useState(0)
   const [isOpen, setOpen] = useState(false)
