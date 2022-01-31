@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Footer from '../components/Footer'
 import About from '../components/sections/About'
+import Contact from '../components/sections/Contact'
 
 import Hero from '../components/sections/Hero'
 import Skills from '../components/sections/Skills'
@@ -21,9 +22,9 @@ export default function Home() {
         <Hero />
         <Skills />
         <About />
+        <Contact />
       </main>
 
-      {/* Footer */}
       <Footer />
     </>
   )
