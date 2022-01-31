@@ -6,7 +6,9 @@ export default function Footer() {
     <footer className="grid grid-rows-2 max-w-[1080px] lg:mx-auto border-t-2 border-blue py-10 mx-4 md:px-2">
       <div className="flex justify-between md:items-center flex-col md:flex-row gap-4">
         <Link href="/">
-          <a className="font-display text-3xl">Tyler Morales</a>
+          <a className="font-display text-3xl ring-offset-currentColor ring-offset-4 focus:outline-none focus:ring-2 focus:ring-blue">
+            Tyler Morales
+          </a>
         </Link>
         <div className="flex gap-4">
           <a
