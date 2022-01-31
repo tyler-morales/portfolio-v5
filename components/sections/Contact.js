@@ -12,6 +12,7 @@ export default function Contact() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+  const [sent, setSent] = useState(false)
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -26,7 +27,7 @@ export default function Contact() {
       body: JSON.stringify(data),
     })
 
-    console.log(data)
+    setSent(true)
   }
 
   return (
@@ -48,14 +49,14 @@ export default function Contact() {
             </ul>
           </div>
           <form onSubmit={handleSubmit}>
-            <div className="flex gap-8">
+            <div className="flex gap-8 flex-col lg:flex-row">
               <input
                 id="name"
                 type="text"
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Name"
                 required
-                className="border-2 border-blue px-4 py-2 rounded-md text-blue ring-offset-currentColor ring-offset-4 focus:outline-none focus:ring-2"
+                className="bg-gray  border-2 border-darkGray px-4 py-2 rounded-md text-blue ring-offset-currentColor ring-offset-4 focus:outline-none focus:ring-2 focus:ring-lightBlue"
               />
               <input
                 id="email"
@@ -63,7 +64,7 @@ export default function Contact() {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="email"
                 required
-                className="border-2 border-blue px-4 py-2 rounded-md text-blue ring-offset-currentColor ring-offset-4 focus:outline-none focus:ring-2"
+                className="bg-gray border-2 border-darkGray px-4 py-2 rounded-md text-blue ring-offset-currentColor ring-offset-4 focus:outline-none focus:ring-2 focus:ring-lightBlue"
               />
             </div>
             <textarea
@@ -71,13 +72,16 @@ export default function Contact() {
               type="text"
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Message..."
-              rows="10"
-              className="border-2 w-full mt-8  border-blue px-4 py-2 rounded-md text-blue ring-offset-currentColor ring-offset-4 focus:outline-none focus:ring-2"
+              rows="6"
+              className="bg-gray border-2 w-full mt-8  border-darkGray px-4 py-2 rounded-md text-blue ring-offset-currentColor ring-offset-4 focus:outline-none focus:ring-2 focus:ring-lightBlue"
             />
             <button
               type="submit"
-              className="bg-blue text-white md:text-lg rounded-lg px-4 py-2 md:px-8 md:py-4 block w-max mt-4 md:mt-8 ring-offset-currentColor ring-offset-4 focus:outline-none focus:ring-2 focus:ring-blue">
-              Email me
+              className={`bg-blue text-white md:text-lg rounded-lg px-4 py-2 md:px-8 md:py-4 block w-max mt-4 md:mt-8 ring-offset-currentColor ring-offset-4 focus:outline-none focus:ring-2 focus:ring-blue ${
+                sent && 'opacity-50 cursor-not-allowed'
+              }`}
+              disabled={sent}>
+              {!sent ? 'Email me' : 'Message sent'}
             </button>
           </form>
         </div>

@@ -23,6 +23,4 @@ export default async (req, res) => {
   await mail.send(data)
 
   res.status(200).json({status: 'OK'})
-
-  console.log('Message Sent')
 }
