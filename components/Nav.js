@@ -3,7 +3,7 @@ import {Squeeze as Hamburger} from 'hamburger-react'
 
 export default function Nav() {
   const [toggleMenu, setToggleMenu] = useState(false)
-  const [screenWidth, setScreenWidth] = useState(400)
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
   const [isOpen, setOpen] = useState(false)
 
   const toggleNav = () => {
@@ -25,7 +25,7 @@ export default function Nav() {
 
   return (
     <nav className="lg:max-w-[1080px] m-auto flex items-center justify-betweeen w-full">
-      <ul className="py-8 flex flex-col sm:flex-row sm:items-center w-full justify-between">
+      <ul className="pt-8 flex flex-col sm:flex-row sm:items-center w-full justify-between">
         <div className="flex justify-between items-center px-4 mb-6">
           <li className="font-display text-3xl">Tyler Morales</li>
           {screenWidth < 640 && (
@@ -38,28 +38,28 @@ export default function Nav() {
           <div className="flex gap-6 py-4 text-center flex-col sm:flex-row bg-blue text-white sm:text-black sm:bg-transparent">
             <li className="px-4">
               <a
-                className="ring-offset-currentColor ring-offset-2 focus:outline-none focus:ring-2 focus:ring-blue focus:px-4 py"
+                className="ring-offset-currentColor ring-offset-2 focus:outline-none focus:ring-2 focus:ring-blue sm:focus:px-0 sm:py-2 focus:px-4 py-2"
                 href="#work">
                 Work
               </a>{' '}
             </li>
             <li className="px-4">
               <a
-                className="ring-offset-currentColor ring-offset-2 focus:outline-none focus:ring-2 focus:ring-blue focus:px-4 py"
+                className="ring-offset-currentColor ring-offset-2 focus:outline-none focus:ring-2 focus:ring-blue sm:focus:px-0 sm:py-2 focus:px-4 py-2"
                 href="#experience">
                 Experience
               </a>{' '}
             </li>
             <li className="px-4">
               <a
-                className="ring-offset-currentColor ring-offset-2 focus:outline-none focus:ring-2 focus:ring-blue focus:px-4 py"
+                className="ring-offset-currentColor ring-offset-2 focus:outline-none focus:ring-2 focus:ring-blue sm:focus:px-0 sm:py-2 focus:px-4 py-2"
                 href="#about">
                 About
               </a>{' '}
             </li>
             <li className="px-4">
               <a
-                className="ring-offset-currentColor ring-offset-2 focus:outline-none focus:ring-2 focus:ring-blue focus:px-4 py"
+                className="ring-offset-currentColor ring-offset-2 focus:outline-none focus:ring-2 focus:ring-blue sm:focus:px-0 sm:py-2 focus:px-4 py-2"
                 href="#contact">
                 Contact
               </a>{' '}
@@ -70,3 +70,5 @@ export default function Nav() {
     </nav>
   )
 }
+
+
