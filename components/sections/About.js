@@ -30,7 +30,7 @@ export default function About() {
               layout="responsive"
               width={1000}
               height={1329}
-              src="/../public/images/me.png"
+              src="/images/me.png"
               alt="Image of Tyler sitting at the CSU green house, 2022"
               className="object-cover w-full h-auto rounded-md"
             />
