@@ -22,18 +22,21 @@ export default function Home() {
         {/* Description */}
         <meta
           name="description"
-          content="Tyler Morale's Front End Developer Portfolio"
+          content="Tyler Morales's Front End Developer Portfolio"
         />
 
         <meta
           property="og:description"
-          content="Tyler Morale's Front End Developer Portfolio"
+          content="Tyler Morales's Front End Developer Portfolio"
         />
 
         {/* Misc */}
         <meta name="twitter:card" content="summary" />
         <meta property="og:url" content="https://tmo.codes/" />
-        <meta property="og:image" content="/images/og.png" />
+        <meta
+          property="og:image"
+          content="blob:https://vercel.com/65a3a392-65e8-4445-b5cb-e2136ae0f945"
+        />
         <meta property="og:type" content="website" />
 
         {/* Favicon */}
