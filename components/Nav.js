@@ -1,9 +1,11 @@
 import React, {useState, useEffect} from 'react'
 import {Squeeze as Hamburger} from 'hamburger-react'
+import useDeviceSize from '../hooks/useDeviceSize'
 
 export default function Nav() {
+  const [width] = useDeviceSize()
   const [toggleMenu, setToggleMenu] = useState(false)
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+  const [screenWidth, setScreenWidth] = useState(0)
   const [isOpen, setOpen] = useState(false)
 
   const toggleNav = () => {
@@ -15,6 +17,7 @@ export default function Nav() {
     const changeWidth = () => {
       setScreenWidth(window.innerWidth)
     }
+    changeWidth()
 
     window.addEventListener('resize', changeWidth)
 
@@ -22,7 +25,6 @@ export default function Nav() {
       window.removeEventListener('resize', changeWidth)
     }
   }, [])
-
   return (
     <nav className="lg:max-w-[1080px] m-auto flex items-center justify-betweeen w-full">
       <ul className="pt-8 flex flex-col sm:flex-row sm:items-center w-full justify-between">
@@ -70,5 +72,3 @@ export default function Nav() {
     </nav>
   )
 }
-
-
