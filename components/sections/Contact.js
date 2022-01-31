@@ -49,7 +49,7 @@ export default function Contact() {
             </ul>
           </div>
           <form onSubmit={handleSubmit}>
-            <div className="flex gap-8 flex-col lg:flex-row">
+            <div className="flex gap-4 md:gap-8 flex-col lg:flex-row">
               <input
                 id="name"
                 type="text"
@@ -64,7 +64,7 @@ export default function Contact() {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="email"
                 required
-                className="bg-gray border-2 border-darkGray px-4 py-2 rounded-md text-blue ring-offset-currentColor ring-offset-4 focus:outline-none focus:ring-2 focus:ring-lightBlue"
+                className="bg-gray border-2 w-full border-darkGray px-4 py-2 rounded-md text-blue ring-offset-currentColor ring-offset-4 focus:outline-none focus:ring-2 focus:ring-lightBlue"
               />
             </div>
             <textarea
@@ -73,7 +73,7 @@ export default function Contact() {
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Message..."
               rows="6"
-              className="bg-gray border-2 w-full mt-8  border-darkGray px-4 py-2 rounded-md text-blue ring-offset-currentColor ring-offset-4 focus:outline-none focus:ring-2 focus:ring-lightBlue"
+              className="bg-gray border-2 w-full mt-4 md:mt-8 border-darkGray px-4 py-2 rounded-md text-blue ring-offset-currentColor ring-offset-4 focus:outline-none focus:ring-2 focus:ring-lightBlue"
             />
             <button
               type="submit"

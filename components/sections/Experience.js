@@ -52,13 +52,13 @@ export default function Experience() {
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-20">
           {/* Buttons */}
-          <div className="flex gap-8 md:flex-col justify-start overflow-scroll md:overflow-auto">
+          <div className="flex gap-8 md:flex-col justify-start overflow-scroll md:overflow-visible">
             {data.map((job, index) => {
               return (
                 <button
                   onClick={() => setTab(job.id)}
                   key={index}
-                  className={`text-lg text-white border-4 border-green rounded-lg py-2 px-4 ${
+                  className={`text-lg text-white border-4 border-green rounded-lg py-2 px-4 ring-offset-blue ring-offset-4 focus:outline-none focus:ring-2 focus:ring-green ${
                     tab == job.id && 'bg-green'
                   }`}>
                   {job.name}
@@ -83,7 +83,9 @@ export default function Experience() {
                 <ul>
                   {job.description.map((item, index) => {
                     return (
-                      <li key={index} className="text-white mb-2 list-disc">
+                      <li
+                        key={index}
+                        className="text-white mb-2 list-style-custom">
                         {item}
                       </li>
                     )
