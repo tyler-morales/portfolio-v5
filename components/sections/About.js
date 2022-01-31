@@ -2,6 +2,8 @@ import {useState} from 'react'
 import Image from 'next/image'
 import Section from '../Section'
 
+import me from '../../public/images/me.png'
+
 const sentences = [
   'On the side, I regularly ride bikes, run on trails, and read nightly.',
   'On the side, I regularly save kittens from trees, parachute off mountains, and brush and floss 3x a day.',
@@ -30,7 +32,8 @@ export default function About() {
               layout="responsive"
               width={1000}
               height={1329}
-              src="/images/me.png"
+              src={me}
+              placeholder="blur"
               alt="Image of Tyler sitting at the CSU green house, 2022"
               className="object-cover w-full h-auto rounded-md"
             />
