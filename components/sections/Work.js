@@ -70,15 +70,15 @@ export default function Work() {
     <Section bgColor="bg-green" id="experience">
       <div className="px-4 max-w-[1080px] m-auto">
         <h2 className="text-white text-4xl font-bold mb-10">Work</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
           {data.map((item, index) => {
             return (
               <div
                 key={index}
                 className={`relative ${
                   open == item.id
-                    ? 'col-span-3 w-full bg-darkGray rounded-lg p-4 grid grid-cols-1 md:grid-cols-2 row-start-1 cursor-default gap-4 xl:gap-0'
-                    : 'col-span-1 w-max cursor-pointer'
+                    ? 'md:col-span-3 w-full bg-darkGray rounded-lg p-4 grid grid-cols-1 md:grid-cols-2 row-start-1 cursor-default gap-4 xl:gap-0'
+                    : 'w-max cursor-pointer'
                 }`}>
                 <div
                   className={`absolute bottom-1 w-full px-4 pb-4 h-1/3 rounded-b-xl z-10 ${
