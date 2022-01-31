@@ -21,7 +21,7 @@ export default function About() {
   }
 
   return (
-    <Section>
+    <Section id="about">
       <div className="px-4 max-w-[1080px] m-auto">
         <h2 className="text-blue text-4xl font-bold mb-10">About</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-20">

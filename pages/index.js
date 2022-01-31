@@ -19,7 +19,7 @@ export default function Home() {
         />
       </Head>
 
-      <main className="grid gap-12 grid-cols-1">
+      <main className="grid  sm:gap-12 grid-cols-1">
         <Hero />
         <Experience />
         <Skills />
