@@ -80,7 +80,7 @@ export default function Contact() {
               className={`bg-blue text-white md:text-lg rounded-lg px-4 py-2 md:px-8 md:py-4 block w-max mt-4 md:mt-8 ring-offset-currentColor ring-offset-4 focus:outline-none focus:ring-2 focus:ring-blue ${
                 sent && 'opacity-50 cursor-not-allowed'
               }`}
-              disabled={sent}>
+              disabled={sent || name == '' || email == '' || message == ''}>
               {!sent ? 'Email me' : 'Message sent'}
             </button>
           </form>
