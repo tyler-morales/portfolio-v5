@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import About from '../components/sections/About'
 
 import Hero from '../components/sections/Hero'
+import Skills from '../components/sections/Skills'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
 
       <main className="grid gap-12 grid-cols-1">
         <Hero />
+        <Skills />
         <About />
       </main>
 
