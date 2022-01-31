@@ -1,10 +1,13 @@
 import React from 'react'
+import Link from 'next/link'
 
 export default function Footer() {
   return (
     <footer className="grid grid-rows-2 max-w-[1080px] lg:mx-auto border-t-2 border-blue py-10 mx-4 md:px-2">
       <div className="flex justify-between md:items-center flex-col md:flex-row gap-4">
-        <h2 className="font-display text-3xl">Tyler Morales</h2>
+        <Link href="/">
+          <a className="font-display text-3xl">Tyler Morales</a>
+        </Link>
         <div className="flex gap-4">
           <a
             href="https://www.linkedin.com/in/tyler-morales-web-dev/"
