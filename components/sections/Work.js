@@ -62,7 +62,6 @@ export default function Work() {
     setOpen(id)
   }
   const closeProject = (id) => {
-    console.log('clicked')
     if (open == id) setOpen(null)
   }
 
@@ -95,6 +94,8 @@ export default function Work() {
                   height={open == item.id ? 400 : 600}
                   width={open == item.id ? 400 : 300}
                   alt={item.name}
+                  placeholder="blur"
+                  blurDataURL="/images/blur.png"
                   className="object-cover rounded-xl"
                   onClick={() => openProject(item.id)}
                 />
