@@ -35,7 +35,7 @@ export default function Home() {
         <meta property="og:url" content="https://tmo.codes/" />
         <meta
           property="og:image"
-          content="blob:https://vercel.com/65a3a392-65e8-4445-b5cb-e2136ae0f945"
+          content="https://raw.githubusercontent.com/tyler-morales/portfolio-v5/main/public/images/og.png"
         />
         <meta property="og:type" content="website" />
 
