@@ -46,7 +46,7 @@ export default function Experience() {
   console.log(tab)
 
   return (
-    <Section bgColor="bg-blue">
+    <Section bgColor="bg-blue" id='experience'>
       <div className="px-4 max-w-[1080px] m-auto">
         <h2 className="text-white text-4xl font-bold mb-10">Experience</h2>
 
