@@ -7,6 +7,7 @@ import Experience from '../components/sections/Experience'
 
 import Hero from '../components/sections/Hero'
 import Skills from '../components/sections/Skills'
+import Work from '../components/sections/Work'
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
 
       <main className="grid  sm:gap-12 grid-cols-1">
         <Hero />
+        <Work />
         <Experience />
         <Skills />
         <About />
