@@ -35,7 +35,7 @@ export default function About() {
               className="object-cover w-full h-auto rounded-md"
             />
             <figcaption className="text-center opacity-50 mt-4 text-xs hover:opacity-100">
-              Sitting at the CSU green house, 2022
+              Sitting at the Colorado State University green house, 2022
             </figcaption>
           </figure>
           <div>
