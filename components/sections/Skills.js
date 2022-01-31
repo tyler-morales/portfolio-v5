@@ -65,12 +65,12 @@ export default function Skills() {
     <Section>
       <div className="px-4 max-w-[1080px] m-auto">
         <h2 className="text-blue text-4xl font-bold mb-10">Skills</h2>
-        <ul className="flex flex-wrap gap-8 justify-center">
+        <ul className="flex flex-wrap gap-8 lg:justify-center">
           {data.map((icon, index) => {
             return (
               <li key={index} className="flex items-center gap-4">
                 <Image src={icon.path} width={50} height={50} alt={icon.name} />
-                <span className="font-bold text-lg">{icon.name}</span>
+                <span className="font-bold lg:text-lg">{icon.name}</span>
               </li>
             )
           })}
