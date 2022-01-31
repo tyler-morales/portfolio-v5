@@ -67,7 +67,7 @@ export default function Work() {
   }
 
   return (
-    <Section bgColor="bg-green" id="experience">
+    <Section bgColor="bg-green" id="work">
       <div className="px-4 max-w-[1080px] m-auto">
         <h2 className="text-white text-4xl font-bold mb-10">Work</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
