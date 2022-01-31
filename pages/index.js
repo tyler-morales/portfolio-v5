@@ -33,7 +33,7 @@ export default function Home() {
         {/* Misc */}
         <meta name="twitter:card" content="summary" />
         <meta property="og:url" content="https://tmo.codes/" />
-        <meta property="og:image" content="../public/images/og.png" />
+        <meta property="og:image" content="/images/og.png" />
         <meta property="og:type" content="website" />
 
         {/* Favicon */}
