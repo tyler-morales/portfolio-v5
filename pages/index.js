@@ -32,7 +32,7 @@ export default function Home() {
 
         {/* Misc */}
         <meta name="twitter:card" content="summary" />
-        <meta property="og:url" content="https://tmo.codes/" />
+        <meta property="og:url" content="https://tylermorales.dev /" />
         <meta
           property="og:image"
           content="https://raw.githubusercontent.com/tyler-morales/portfolio-v5/main/public/images/og.png"
