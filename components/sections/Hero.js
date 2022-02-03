@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <Section>
       <div className="px-4 max-w-[1080px] m-auto">
-        <span className="block md:text-center text-lg">
+        <span className="block text-lg md:text-center">
           👋 Hi, my name is Tyler!
         </span>
         <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mt-4 md:leading-normal lg:leading-[120px] md:text-center">
@@ -17,8 +17,9 @@ export default function Hero() {
           web apps that are accessible for all.
         </p>
         <a
+          data-splitbee-event="Click CTA"
           href="#work"
-          className="bg-blue text-white md:text-lg rounded-lg px-4 py-2 md:px-8 md:py-4 md:m-auto block w-max mt-4 md:mt-8 ring-offset-currentColor ring-offset-4 focus:outline-none focus:ring-2 focus:ring-blue">
+          className="block px-4 py-2 mt-4 text-white rounded-lg bg-blue md:text-lg md:px-8 md:py-4 md:m-auto w-max md:mt-8 ring-offset-currentColor ring-offset-4 focus:outline-none focus:ring-2 focus:ring-blue">
           View Work
         </a>
       </div>
