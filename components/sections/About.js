@@ -25,8 +25,8 @@ export default function About() {
   return (
     <Section id="about">
       <div className="px-4 max-w-[1080px] m-auto">
-        <h2 className="text-blue text-4xl font-bold mb-10">About</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-20">
+        <h2 className="mb-10 text-4xl font-bold text-blue">About</h2>
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:gap-20">
           <figure className="w-full">
             <Image
               layout="responsive"
@@ -37,12 +37,12 @@ export default function About() {
               alt="Image of Tyler sitting at the CSU green house, 2022"
               className="object-cover w-full h-auto rounded-md"
             />
-            <figcaption className="text-center opacity-50 mt-4 text-xs hover:opacity-100">
+            <figcaption className="mt-4 text-xs text-center opacity-50 hover:opacity-100">
               Sitting at the Colorado State University green house, 2022
             </figcaption>
           </figure>
           <div>
-            <h4 className="lg:mt-10 mb-4 lg:mb-20 text-sm md:text-base">
+            <h4 className="mb-4 text-sm lg:mt-10 lg:mb-20 md:text-base">
               An Overview
             </h4>
             <p>
@@ -65,9 +65,10 @@ export default function About() {
               {sentence}
             </p>
             <a
+              data-splitbee-event="Open Resume"
               href="/files/resume.pdf"
               target="_blank"
-              className="bg-blue text-white md:text-lg rounded-lg px-4 py-2 md:px-8 md:py-4 block w-max mt-4 md:mt-8 ring-offset-currentColor ring-offset-4 focus:outline-none focus:ring-2 focus:ring-blue">
+              className="block px-4 py-2 mt-4 text-white rounded-lg bg-blue md:text-lg md:px-8 md:py-4 w-max md:mt-8 ring-offset-currentColor ring-offset-4 focus:outline-none focus:ring-2 focus:ring-blue">
               Resume
             </a>
           </div>
