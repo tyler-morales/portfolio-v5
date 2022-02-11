@@ -69,7 +69,10 @@ export default function Work() {
     <Section bgColor="bg-green" id="work">
       <div className="px-4 max-w-[1080px] m-auto">
         <h2 className="mb-10 text-4xl font-bold text-white">Work</h2>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
+        <a
+          id="project"
+          href="#project"
+          className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
           {data.map((item, index) => {
             return (
               <div
@@ -151,7 +154,7 @@ export default function Work() {
               </div>
             )
           })}
-        </div>
+        </a>
       </div>
     </Section>
   )
