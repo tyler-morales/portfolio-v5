@@ -26,7 +26,7 @@ const data = [
     id: 2,
     name: 'Parkway',
     image1x1: '/images/parkway-1x1.png',
-    image1x2: '/images/hermanshow-1x2.png',
+    image1x2: '/images/parkway-1x2.png',
     url: '',
     github: 'https://github.com/tyler-morales/visit-national-parks',
     description:
@@ -68,8 +68,8 @@ export default function Work() {
   return (
     <Section bgColor="bg-green" id="work">
       <div className="px-4 max-w-[1080px] m-auto">
-        <h2 className="text-white text-4xl font-bold mb-10">Work</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+        <h2 className="mb-10 text-4xl font-bold text-white">Work</h2>
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
           {data.map((item, index) => {
             return (
               <div
@@ -84,7 +84,7 @@ export default function Work() {
                     open == item.id ? '' : 'bg-gradient-to-t from-blue'
                   }`}>
                   {open != item.id && (
-                    <h3 className="absolute bottom-4 text-xl font-bold text-white">
+                    <h3 className="absolute text-xl font-bold text-white bottom-4">
                       {item.name}
                     </h3>
                   )}
@@ -101,8 +101,8 @@ export default function Work() {
                 />
                 {/* Opened Project */}
                 {open == item.id && (
-                  <div className="mt-4 md:mt-0 xl:ml-8 pl-4 bg-white w-full rounded-lg p-4 shadow-lg">
-                    <div className="flex justify-between items-center">
+                  <div className="w-full p-4 pl-4 mt-4 bg-white rounded-lg shadow-lg md:mt-0 xl:ml-8">
+                    <div className="flex items-center justify-between">
                       <h3 className="text-3xl font-bold">{item.name}</h3>
                       {open == item.id && (
                         <button
@@ -112,7 +112,7 @@ export default function Work() {
                         </button>
                       )}
                     </div>
-                    <h4 className="uppercase text-xs opacity-40 mt-2">
+                    <h4 className="mt-2 text-xs uppercase opacity-40">
                       Description
                     </h4>
                     <p className="mt-4">{item.description}</p>
@@ -132,14 +132,14 @@ export default function Work() {
                         <AiFillGithub size="1.25em" /> <span>Github</span>
                       </a>
                     </div>
-                    <h4 className="uppercase text-xs opacity-40 mt-6">
+                    <h4 className="mt-6 text-xs uppercase opacity-40">
                       Tech Stack
                     </h4>
                     <ul className="flex flex-wrap gap-2 mt-4">
                       {item.tech.map((tech, index) => {
                         return (
                           <li
-                            className="rounded-full bg-lightBlue text-white py-1 px-4 text-sm md:text-base"
+                            className="px-4 py-1 text-sm text-white rounded-full bg-lightBlue md:text-base"
                             key={index}>
                             {tech}
                           </li>
