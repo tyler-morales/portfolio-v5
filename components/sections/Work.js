@@ -96,7 +96,7 @@ export default function Work() {
                   alt={item.name}
                   placeholder="blur"
                   blurDataURL="/images/blur.png"
-                  className="object-contain"
+                  className="object-contain rounded-xl"
                   onClick={() => openProject(item.id)}
                 />
                 {/* Opened Project */}
