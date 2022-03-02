@@ -27,7 +27,7 @@ const data = [
     name: 'Parkway',
     image1x1: '/images/parkway-1x1.png',
     image1x2: '/images/parkway-1x2.png',
-    url: '',
+    url: 'https://visitnationalparks.us',
     github: 'https://github.com/tyler-morales/visit-national-parks',
     description:
       '🏞  Parkway is a web app that leverages the National Park Service’s API to display and organize every national park and site. \n Users can create an account to save parks they’ve visited or want to visit. Additionally, they can filter parks for the ones that best fits their needs and view a detailed park info page with images, things to do, prices, and more.',
